@@ -12,6 +12,20 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+		<style type="text/css" media="screen">
+			#typed {
+					top: -20px;
+					position: relative;
+					color: #42b01a;
+					z-index: 999;
+					margin-left: 5px;
+					font-family: monospace;
+					font-size: 1.2em;
+				}
+				#typed a {
+					color: #f00;
+				}
+		</style>
 		<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -24,10 +38,28 @@
 					<h1 class="main-title"><span class="thin">Hola, sóc Nando</span></h1>
 				</div>
 			</div>
+			<div id="typed-strings">
+			  <p>Carregant habilitats...</p>
+			  <p>Desenvolupament Web</p>
+			  <p>HTML</p>
+			  <p>CSS</p>
+			  <p>Javascript</p>
+			  <p>PHP</p>
+			  <p>MySQL</p>
+				<p><a href="mailto: holaquieres@holasocnando.com">Contacta'm :)</a></p>
+			</div>
+			<span id="typed"></span>
 		</div><!-- /container -->
 		<script src="js/TweenLite.min.js"></script>
 		<script src="js/EasePack.min.js"></script>
 		<script src="js/rAF.js"></script>
 		<script src="js/demo-1.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+		<script>
+		  var typed = new Typed('#typed', {
+		    stringsElement: '#typed-strings'
+		  });
+		  //https://github.com/mattboldt/typed.js/
+		</script>
 	</body>
 </html>
